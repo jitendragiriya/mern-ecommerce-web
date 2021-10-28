@@ -1,0 +1,16 @@
+.searchbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+.mysearch {
+  border: 1px solid #287bff;
+  height: 100%;
+  width: 100%;
+  padding: 0.2rem .5rem;
+  font-size: 1rem;
+}

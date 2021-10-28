@@ -1,0 +1,79 @@
+.footer {
+  position: relative;
+  background-color: #192a56;
+  padding: 1.5rem 3rem;
+  color: white;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  max-width: 1920px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .links .col {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer .links .col h4 {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.footer .links .col span {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: rgb(170, 170, 170);
+}
+
+.footer .social__Icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .social__Icons span {
+  margin: 0 1rem;
+  color: white;
+}
+
+.footer .social__Icons span svg {
+  font-size: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.footer .credit p {
+  color: white;
+}
+
+.footer .credit p span {
+  color: #27ae60;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .footer {
+    padding: 1rem .5rem;
+  }
+}

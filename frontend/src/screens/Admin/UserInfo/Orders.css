@@ -1,0 +1,76 @@
+.OneUserOrdersdetails {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  width: 96%;
+  margin: 5px 0;
+}
+
+.orderbasicInfo {
+  position: relative;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ordChilds {
+  margin: 0.3rem 1rem;
+}
+
+.ordChilds > span:nth-child(1) {
+  font-weight: 500;
+  margin-right: 1rem;
+  color: red;
+}
+
+.orderOnMore {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.checkoutProducts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+
+.ckeckoutProductImage {
+  position: relative;
+  width: 100px;
+  height: 60px;
+}
+
+.ckeckoutProductImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.checkOutProductDetail {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkOutProductDetail > p {
+  font-size: 1rem;
+  margin: 5px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .checkoutProducts {
+    flex-direction: column;
+  }
+}

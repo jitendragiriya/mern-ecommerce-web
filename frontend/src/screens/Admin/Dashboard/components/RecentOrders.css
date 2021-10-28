@@ -1,0 +1,64 @@
+
+.recentOrders {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardHeader h2 {
+  color: #287bff;
+  font-weight: 600;
+}
+
+.cardHeader .btnPrimary {
+  background-color: #287bff;
+}
+
+.adODetials .recentOrderstb {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.adODetials .recentOrderstb thead td {
+  font-weight: 600;
+}
+
+.adODetials .recentOrderstb tr {
+  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.adODetials .recentOrderstb tr:hover {
+  background-color: #287bff;
+  color: white;
+  cursor: default;
+}
+
+.adODetials .recentOrderstb tr td {
+  padding: 10px;
+}
+
+.adODetials .recentOrderstb tr td:last-child {
+  text-align: end;
+}
+
+.adODetials .recentOrderstb tr td:nth-child(2) {
+  text-align: end;
+}
+
+.adODetials .recentOrderstb tr td:nth-child(3) {
+  text-align: center;
+}
+
+

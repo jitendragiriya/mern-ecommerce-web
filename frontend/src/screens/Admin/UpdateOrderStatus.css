@@ -1,0 +1,26 @@
+.changeTheOrderStatus{
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.updateOrderForm{
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 300px;
+    max-width: 95%;
+    border-radius: 10px;
+}
+
+.updateOrderForm > div > select {
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+}

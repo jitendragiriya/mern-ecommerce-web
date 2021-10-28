@@ -1,0 +1,205 @@
+.productDetailPage {
+  position: relative;
+  display: flex;
+  padding: 3rem 0;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__details {
+  display: flex;
+  width: 95%;
+}
+
+.product__details .left {
+  width: 40%;
+  height: 400px;
+  max-width: 400px;
+  min-width: 150px;
+  margin-right: 1rem;
+  position: relative;
+  border: 1px solid black;
+}
+
+.product__details .left img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.product__details .right {
+  width: 60%;
+}
+
+.product__details .right h1 {
+  font-size: 1.4rem;
+}
+
+.product__details .right .reviews {
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+
+.product__details .right .price {
+  font-size: 600;
+  font-size: 1.5rem;
+  color: green;
+  margin-bottom: 1rem;
+}
+
+.product__quantity {
+  display: flex;
+}
+
+.product__quantity input {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.porduct__quan_btn {
+  height: 1.7rem;
+  width: 1.7rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 198, 27);
+}
+
+.product__details .addCart {
+  background: green;
+  padding: 0.4rem 2rem;
+  color: #fff;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.addCart.disabled {
+  cursor:not-allowed;
+}
+
+.product__details h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.product__details .product__status {
+  margin-top: 0.5rem;
+}
+
+.product__details .product__status .status {
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: 0.1rem solid black;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.current__status {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.current__status .inStock {
+  color: green;
+}
+
+.current__status .outOfStock {
+  color: red;
+}
+
+.submitYourReview {
+  padding: 1rem 3.5rem;
+  display: flex;
+  justify-content: flex-end;
+  max-height: 500px;
+}
+
+.submitDialog {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1rem;
+}
+
+.submitDialog > textarea {
+  resize: vertical;
+  max-height: 330px;
+  min-width: 100px;
+}
+
+.MuiDialogContent-root {
+  flex: none;
+  padding: 4px;
+}
+
+.submitDialogTextArea {
+  border: 1px solid rgba(168, 168, 168, 0.76);
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+
+.productReviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.productReviews > h2 {
+  border-bottom: 1px solid black;
+  padding: 0 0.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.productReviewContainer {
+  width: 95%;
+  display: flex;
+  overflow: auto;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .product__details .left {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product__details .left {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product__details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__details .left {
+    width: 100%;
+    height: 400px;
+  }
+
+  .product__details .right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+  .product__details .left {
+    width: 100%;
+    height: 280px;
+  }
+
+}

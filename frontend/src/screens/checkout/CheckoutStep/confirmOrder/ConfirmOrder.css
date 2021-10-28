@@ -1,0 +1,141 @@
+.confirmOrderPage {
+  padding: 1rem 3rem;
+}
+
+.shippingAndOrderSummary {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.confirmshippingArea {
+  width: 60%;
+}
+
+.orderSummary {
+  min-width: 250px;
+  max-width: 40%;
+  width: 90%;
+}
+
+.confirmshippingArea,
+.confirmCartItems {
+  padding: 1rem;
+}
+
+.confirmshippingArea > p {
+  font-size: 1rem;
+}
+
+.confirmshippingAreaBox > div {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.confirmshippingAreaBox > div > p {
+  color: black;
+}
+.confirmshippingAreaBox > div > span {
+  margin: 0 1rem;
+  color: #575757;
+}
+
+.confirmshippingArea > p,
+.confirmCartItems > p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.orderSummary {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.orderSummary > p {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.orderSummary > div > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.orderSummary > div > div > span {
+  color: rgba(0, 0, 0, 0.692);
+}
+
+.orderSummaryTotal {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.363);
+  padding: 1.5rem 0;
+}
+
+.orderSummary > button {
+  background-color: tomato;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  cursor: pointer;
+}
+
+.orderSummary > button:hover {
+  background-color: rgb(255, 115, 0);
+}
+
+@media screen and (max-width: 767px) {
+  .confirmOrderPage {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .shippingAndOrderSummary {
+    flex-direction: column;
+  }
+
+  .confirmshippingArea {
+    width: 100%;
+  }
+
+  .orderSummary {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .confirmOrderPage {
+    padding: 1rem .3rem;
+  }
+
+   
+.confirmshippingArea > p,
+.confirmCartItems > p {
+  font-size: 1.2rem;
+}
+
+.orderSummary > p {
+  font-size: 1.2rem;
+}
+}
+
+@media screen and (max-width: 300px) {
+  .confirmOrderPage {
+    padding: 1rem 0;
+  }
+  
+.confirmshippingArea > p,
+.confirmCartItems > p {
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+
+.orderSummary > p {
+  font-size: 1.1rem;
+}
+}

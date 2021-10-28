@@ -1,0 +1,81 @@
+.responsivePage {
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.orderDetailsPage {
+  position: relative;
+  width: 100%;
+  max-width: 95%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.orderDetailsContainer > h1 {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  color: red;
+}
+
+.orderDetailsContainer > p,
+.orderDetailsCartItems > p {
+  font-size: 1.1rem;
+  border-top: 1px solid green;
+}
+
+.orderDetailsContainerBox,
+.orderDetailsCartItemsContainer {
+  margin: 1rem;
+}
+
+.orderDetailsContainerBox > div {
+  display: flex;
+  margin: 1rem;
+}
+
+.orderDetailsContainerBox > div > p {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+.orderDetailsContainerBox > div > span {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+.orderDetailsCartItemsContainer > div {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.orderDetailsCartItemsContainer > div > img {
+  width: 150px;
+}
+
+.orderDetailsCartItemsContainer > div > a {
+  margin: 0 1rem;
+}
+
+.orderDetailsCartItemsContainer > div > span {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 414px) {
+  .orderDetailsContainer > h1 {
+  font-size: 1rem;
+}
+
+.orderDetailsCartItemsContainer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+  .orderDetailsCartItemsContainer > div > img {
+    width: 100px;
+  }
+}

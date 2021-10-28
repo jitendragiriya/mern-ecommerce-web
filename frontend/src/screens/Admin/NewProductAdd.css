@@ -1,0 +1,13 @@
+#createProductFormImage {
+  width: 100%;
+  overflow: auto;
+}
+
+#createProductFormImage > img {
+  width: 30%;
+  margin: 0 0.3rem;
+}
+
+.validateError.primg{
+  top: 45px;
+}

@@ -1,0 +1,119 @@
+.checkout__productPage {
+  display: flex;
+  border-bottom: 1px solid rgb(110, 110, 110);
+  padding: 10px 0;
+}
+
+.checkoutProduct__image {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  min-width: 200px;
+  margin-right: 10px;
+}
+
+.checkoutProduct__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.checkoutProductInfo {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.checkOutProductDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductName {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.copdescription {
+  font-size: 0.97rem;
+  line-height: 1rem;
+}
+
+.removeFCart:hover {
+  background: red;
+  letter-spacing: 0.1rem;
+}
+
+.product__quantity {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.btnPrimary {
+  margin-top: 0;
+}
+
+.prdQuantity {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
+
+.prdQuantity span {
+  margin: 0 1rem;
+}
+
+.copPPrice {
+  position: absolute;
+  right: 0;
+  width: fit-content;
+  min-width: fit-content;
+  text-align: right;
+  font-weight: 600;
+}
+
+.tabView {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .checkout__productPage {
+    display: none;
+  }
+
+  .tabView {
+    display: flex;
+    flex-direction: column;
+  }
+  .TabViewCheckout {
+    display: flex;
+    width: 100%;
+  }
+
+  .copPPrice {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .checkoutProduct__image {
+    width: 150px;
+    height: 100px;
+    min-width: 100px;
+  }
+  .checkout__productPage .remToCart {
+    width: 100px;
+    padding: 0.1rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .copPPrice {
+    font-size: 1rem;
+  }
+}

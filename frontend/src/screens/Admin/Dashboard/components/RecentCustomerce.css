@@ -1,0 +1,57 @@
+
+.adminPrecentCustomers {
+  position: relative;
+  display: grid;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  height: fit-content;
+}
+
+.adminPrecentCustomers >table{
+  margin-top: .4rem;
+}
+
+.recentCustomerImgBox {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.recentCustomerImgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.adminPrecentCustomers table tr td {
+  padding: 12px 10px;
+}
+
+.adminPrecentCustomers table tr:hover {
+  background-color: #287bff;
+  color: white;
+}
+
+.adminPrecentCustomers table tr h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.1rem;
+  color: black;
+}
+
+.adminPrecentCustomers table tr h4 span {
+  font-size: 0.89rem;
+  color: rgba(160, 160, 160, 0.986);
+}
+
+.adminPrecentCustomers table tr:hover h4,
+.adminPrecentCustomers table tr:hover h4 span {
+  color: white;
+}

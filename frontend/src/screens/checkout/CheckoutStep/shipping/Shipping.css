@@ -1,0 +1,18 @@
+
+
+.form__control.ship > input,
+.form__control.ship > textarea,
+.form__control.ship > select {
+  border: 1px solid black;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem auto;
+}
+
+.form__control.ship  svg {
+  font-size: 1.2rem;
+  top: 10px;
+  left: 2px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.863);
+}

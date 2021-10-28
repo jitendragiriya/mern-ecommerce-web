@@ -1,0 +1,138 @@
+.adminPageSidebar {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 0;
+  z-index: 1000;
+  overflow: auto;
+}
+
+.adminPageSidebar.active,
+.dashboardNavigation.active {
+  width: 200px;
+}
+
+.dashboardNavigation {
+  position: relative;
+  padding-top: 60px;
+  width: 60px;
+  height: 100%;
+  overflow: hidden;
+  background-color: #287bff;
+  border-left: 5px solid #287bff;
+}
+
+.dnavLink {
+  position: relative;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.dnavLink:hover,
+.hovered {
+  background-color: white;
+  transition: 0.1s;
+}
+
+.hovered > a,
+.dnavLink > a {
+  display: block;
+  width: 100%;
+  display: flex;
+  position: relative;
+  color: white;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.dnavLink:hover a,
+.hovered a {
+  color: #287bff;
+  transition: 0.1s;
+}
+
+.navOicon {
+  position: relative;
+  display: block;
+  min-width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.navOicon > svg {
+  font-size: 1.6rem;
+}
+
+.navOtitle {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  text-align: start;
+  white-space: nowrap;
+}
+
+.dnavLink:hover a::before,
+.hovered::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -40px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 30px 30px 0 10px rgb(255, 255, 255);
+  pointer-events: none;
+  transition: 0.1s;
+}
+
+.dnavLink:hover a::after,
+.hovered::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 30px -30px 0 10px rgb(255, 255, 255);
+  pointer-events: none;
+  transition: 0.1s;
+}
+
+.toggle {
+  position: fixed;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 100;
+  background-color: #ff8928;
+  border-bottom-right-radius: 10px;
+}
+
+.toggle > svg {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.adminPageSidebar.active .toggle {
+  width: 60px;
+  background-color: #287bff;
+}
+
+@media screen and (max-width: 480px) {
+  .adminPageSidebar.active,
+  .dashboardNavigation.active {
+    width: 100%;
+  }
+}

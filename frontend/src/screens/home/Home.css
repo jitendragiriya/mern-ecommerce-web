@@ -1,0 +1,160 @@
+.dishes,
+.our__menu,
+.customer__reviews,
+.OrderForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  background-color: #eee;
+}
+
+.productPagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.productPagination > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pageItemActive {
+  background-color: aqua;
+}
+
+.page-link {
+  color: black;
+}
+
+.productPagination > ul > li {
+  list-style: none;
+  margin: 5px;
+  border: 1px solid black;
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+}
+
+/*  the sorting styling is here */
+.sortProducts {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.sortBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 2px 4px;
+  user-select: none;
+  z-index: 110;
+  width: 100px;
+}
+
+.sortBtn > svg {
+  margin-right: 4px;
+}
+
+.selectOptionsBox {
+  /* display: flex; */
+  flex-direction: column;
+}
+
+.categoryBox {
+  margin: 3px 0;
+  list-style: none;
+}
+
+.category-link {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.category-link:hover {
+  color: rgb(255, 136, 0);
+}
+
+.selectOptionsBox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+
+.selectOptionsBox.active {
+  height: 100%;
+  width: 100%;
+}
+
+.sortByPrice,
+.sortByCate,
+.sortByRating {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: white;
+  width: 300px;
+}
+
+.priceBtn,
+.cateBtn,
+.RatingBtn {
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+.heading__subheading {
+  text-align: center;
+}
+
+.heading__subheading .sub__heading {
+  font-size: 1.2rem;
+  color: #27ae60;
+}
+
+.heading__subheading .heading {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.product__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.customer__reviews {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .sortProducts {
+    top: 20px;
+    left: 10px;
+  }
+  .sortByPrice,
+  .sortByCate,
+  .sortByRating {
+    width: 150px;
+  }
+}

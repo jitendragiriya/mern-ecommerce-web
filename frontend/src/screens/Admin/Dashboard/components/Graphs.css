@@ -1,0 +1,28 @@
+.agraphBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+  min-height: 300px;
+  overflow-x: auto;
+}
+
+.boxInGraph {
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 7px 23px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+}
+
+.adODetials {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+

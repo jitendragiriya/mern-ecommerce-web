@@ -1,0 +1,95 @@
+.adminViewList {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  padding-top: 1rem;
+  max-width: 100%;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.adminViewHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adminViewHeaderLinks {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+}
+
+.addNewProduct,
+.deleteProduct {
+  margin-top: 0;
+  margin-right: 1rem;
+}
+
+.deleteProduct:hover {
+  background-color: rgba(255, 0, 0, 0.685);
+}
+
+.adminViewTable {
+  border-collapse: collapse;
+  overflow-x: scroll;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.404);
+  column-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.adminViewTable > thead > tr > th,
+.adminViewTable > tbody > tr > td {
+  padding: 0 5px;
+  min-width: 150px;
+  text-align: right;
+}
+
+.adminViewTable > thead > tr > th {
+  font-size: 1.1rem;
+  background-color: #287bff;
+  color: white;
+  padding: 10px 5px;
+}
+
+.actionIcon > svg{
+  margin: 1px 0.4rem;
+  padding: 0.3rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  color: black;
+}
+
+.deleteBtn{
+  background-color: red;
+}
+
+.btnPrimary.cancelProduct:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.btnPrimary.deleteProduct:hover {
+  background-color: red;
+}
+
+.btnPrimary.next,
+.btnPrimary.prev {
+  padding: 0.3rem 1rem;
+  border-radius: 0.1rem;
+  margin: 1rem 0.4rem;
+}
+
+@media screen and (max-width: 480px) {
+  .adminViewList {
+    width: 100%;
+    left: 0;
+  }
+}

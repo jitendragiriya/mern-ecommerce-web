@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+/* .theme-light { */
+  /* --white: #fff;
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --white2: #eee; */
+/* } */
+
+/* .theme-dark { */
+  /* --white: rgb(104, 104, 104);
+  --green: #27ae60;
+  --black: #b4c8fc;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(255, 255, 255, 0.1);
+  --white2: rgb(226, 69, 69); */
+/* } */
+
+*,
+*::before,
+*::after {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
+  transition: none;
+  font-size: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: black;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+a {
+  color: blue;
+}
+
+.d__flex {
+  display: flex;
+  align-items: center;
+}
+
+.btnPrimary {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1rem;
+  color: #fff;
+  background: black;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 0.3rem 1.3rem;
+}
+
+.btnPrimary:hover {
+  background-color: black;
+}
+
+.Toastify {
+  position: fixed;
+  z-index: 10000;
+  border: 1px solid blue;
+}
+
+.Toastify__toast-container--top-right {
+  margin-top: 3.5rem;
+}
+
+.validateError {
+  color: red;
+}
+
+.greenColor {
+  color: green;
+}
+
+.redColor {
+  color: red;
+}

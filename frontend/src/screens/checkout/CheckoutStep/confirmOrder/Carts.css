@@ -1,0 +1,90 @@
+.yourCartItems {
+  display: flex;
+  border-bottom: 1px solid rgb(110, 110, 110);
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.yourCartItemsImage img {
+  width: 200px;
+  padding: 0 10px 0 0;
+}
+
+.yourCartItemsInfo {
+  display: flex;
+}
+
+.yourCartItemsDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.yourCartItemsDetails .title {
+  font-size: 1.2rem;
+}
+
+.yrcitdescription {
+  font-size: 1rem;
+  color: rgb(121, 121, 121);
+}
+
+.CartItemTotalPrice {
+  display: flex;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  font-weight: 700;
+}
+
+.CartItemTotalPrice1 {
+  display: none;
+}
+
+.CartItemTotalPrice small {
+  margin: 0 1px;
+}
+
+#priceInD {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .yourCartItems {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .yourCartItemsImage img {
+    width: 150px;
+  }
+
+  .CartItemTotalPrice {
+    font-size: 1rem;
+  }
+
+  .cartandItemprice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .CartItemTotalPrice1 {
+    display: flex;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    font-weight: 700;
+  }
+
+  .CartItemTotalPrice {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 300px) {
+  .CartItemTotalPrice1 {
+    margin-left: 0rem;
+  }
+}
+  

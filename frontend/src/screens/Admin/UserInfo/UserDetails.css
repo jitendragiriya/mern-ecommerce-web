@@ -1,0 +1,17 @@
+.UserDetails{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.userEmail{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.personal__info{
+    flex-direction: column;
+    text-align: center;
+}
